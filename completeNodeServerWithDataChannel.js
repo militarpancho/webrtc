@@ -23,11 +23,8 @@ var file = new(static.Server)();
 // rely on our instance of node-static to serve the files
 var app = https.createServer(options, function (req, res) {
   file.serve(req, res);
-}).set('port', process.env.PORT || 8080);
+}).listen(process.env.PORT || 8080);
 
-var server = app.listen(app.get('port'), function() {
-  debug('Express server listening on port ' + server.address().port);
-});
 
 // Use socket.io JavaScript library for real-time web applications
 var io = require('socket.io').listen(app);
