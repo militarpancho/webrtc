@@ -2,7 +2,7 @@
   "name": "WebRTC_Practicas-2017-03-13",
   "version": "1.0.0",
   "description": "ERROR: No README data found!",
-  "main": "index.js",
+  "main": "cap5/completeNodeServerWithDataChannel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
