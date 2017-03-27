@@ -4,7 +4,7 @@
   "description": "ERROR: No README data found!",
   "main": "cap5/completeNodeServerWithDataChannel.js",
   "scripts": {
-	"start":"node ./cap5/completeNodeServerWithDataChannel.js"
+	"start":"node ~/cap5/completeNodeServerWithDataChannel.js"
   },
   "keywords": [],
   "author": "Manuel",
