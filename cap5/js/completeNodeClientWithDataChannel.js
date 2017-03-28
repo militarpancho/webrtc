@@ -229,6 +229,7 @@ function sendData() {
   if(isInitiator) sendChannel.send(data);
   else receiveChannel.send(data);
   trace('Sent data: ' + data);
+  receiveTextarea.innerHTML += "<span style='background-color:#80C5C1;border: 1px solid #80C5C1;border-radius: 5px;display:block; float: right;padding: 5px; margin-right: 140px;'>" + data + "</span><br><br>" ;
 }
 
 // Handlers...
@@ -243,7 +244,7 @@ function gotReceiveChannel(event) {
 
 function handleMessage(event) {
   trace('Received message: ' + event.data);
-  receiveTextarea.value += event.data + '\n';
+  receiveTextarea.innerHTML += "<span style='background-color:#feff65;border: 1px solid #feff65;border-radius: 5px; display:block; float: left; padding: 5px; margin-left: 140px;'>" + event.data + "</span><br><br>" ;
 }
 
 function handleSendChannelStateChange() {
