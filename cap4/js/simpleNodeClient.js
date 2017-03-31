@@ -1,8 +1,11 @@
 //Get <div> placeholder element from DOM
 div = document.getElementById('scratchPad');
+var url = window.location.href
+var arr = url.split('/')
+var result = arr[0] + "//" + arr[2]
 
 //Connect to server
-var socket = io.connect('http://localhost:8080');
+var socket = io.connect(result);
 
 //Ask channel name from user
 channel = prompt("Enter signalling channel name:");
