@@ -9,7 +9,7 @@ var port = process.argv[2];
 // use our instance of node-static to serve the files
 var app = http.createServer(function (req, res) {
   file.serve(req, res);
-}).listen(port,8080);
+}).listen(port || 8080);
 
 // Use socket.io JavaScript library for real-time web applications
 var io = require('socket.io').listen(app);
